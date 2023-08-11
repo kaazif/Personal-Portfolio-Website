@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kaazif Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -147,17 +147,19 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form  onsubmit="sendEmail(); reset(); return false;">
+        <form action="https://formsubmit.co/mohammedkaazif@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Mail Wooooo!">
+            <input type="hidden" name="_next" value="https://kaazif.github.io/Personal-Portfolio-Website/thankyou.html">
 
             <div class="input-box">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text"  name="Name" id="name" placeholder="Full Name" required>
+                <input type="email" name="Email" id="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" id="phone" placeholder="Mobile" required>
-                <input type="text" id="subject" placeholder="Email Subject">
+                <input type="number" name="Phone" id="phone" placeholder="Mobile" required>
+                <input type="text" name="Subject" id="subject" placeholder="Email Subject">
             </div>
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Messsgae" class="btn">
 
         </form>
@@ -176,7 +178,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
     
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
   
@@ -199,6 +201,6 @@
             );
         }
         
-    </script>
+    </script> -->
 </body>
 </html>
